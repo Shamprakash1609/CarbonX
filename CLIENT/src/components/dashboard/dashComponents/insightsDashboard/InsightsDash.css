@@ -1,0 +1,128 @@
+.insights-dashboard {
+    padding: 80px 20px;
+    background-color: #181818;
+    color: #fff;
+    text-align: center;
+    position: relative; /* To control the background layering */
+    background: url('../../../../assets/images/coal.avif') no-repeat center center; /* Add your image path */
+    background-size: cover; /* Ensures the image covers the section */
+}
+
+.insights-dashboard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: dark overlay to make text readable */
+    z-index: 1; /* Ensures the overlay is above the image but below the content */
+}
+
+.insights-dashboard .container {
+    position: relative;
+    z-index: 2; /* Ensures the content is above the background image and overlay */
+}
+
+.insights-dashboard .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #f39c12;
+}
+
+.insights-dashboard .dashboard-card {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    max-width: 1200px; /* Ensures a larger card */
+    margin: 0 auto; /* Centers the card */
+}
+
+.insights-dashboard .dashboard-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.insights-dashboard .dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Adds space between cards */
+    flex-wrap: wrap; /* Ensures the stats wrap on smaller screens */
+}
+
+.insights-dashboard .stat-box {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: calc(33.33% - 20px); /* Adjusts to fit 3 cards in a row */
+    transition: transform 0.3s ease;
+}
+
+.insights-dashboard .stat-box:hover {
+    transform: translateY(-10px);
+    background-color: #333;
+}
+
+.insights-dashboard .stat-number {
+    font-size: 2.5em;
+    color: #ff7f50;
+}
+
+.insights-dashboard .stat-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.insights-dashboard .stat-fill {
+    background-color: #ff7f50;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s ease;
+    position: absolute;
+}
+
+.insights-dashboard .cta-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.insights-dashboard .cta-btn {
+    padding: 12px 30px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.insights-dashboard .cta-btn:hover {
+    background-color: #ff9f73;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .insights-dashboard .dashboard-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insights-dashboard .stat-box {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

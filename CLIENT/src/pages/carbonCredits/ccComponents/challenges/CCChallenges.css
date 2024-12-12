@@ -1,0 +1,78 @@
+/* Container for the "Challenges in Carbon Emissions from Coal Mines" Section */
+.cc-challenges {
+  background-color: #111; /* Dark Gray to match the page design */
+  padding: 60px 20px;
+  /* margin-top: 70px;  */
+  text-align: center;
+}
+
+.cc-challenges-content {
+  max-width: 1200px; /* Increase width to accommodate both charts */
+  margin: 0 auto;
+  color: #fff;
+}
+
+.cc-challenges-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #f39c12; /* Golden Orange for emphasis */
+  margin-bottom: 20px;
+}
+
+.cc-challenges-description {
+  font-size: 1.2rem;
+  color: #ddd; /* Light Gray for readability */
+  margin-bottom: 40px;
+}
+
+/* Flex container for the charts */
+.cc-challenges-visual-container {
+  display: flex;
+  justify-content: space-between; /* Space out the charts */
+  gap: 30px; /* Space between the charts */
+  margin-top: 40px;
+}
+
+/* Visual Section - Emissions Breakdown Bar Chart */
+.cc-challenges-visual {
+  flex: 1; /* Allow bar chart to take up equal space */
+  max-width: 100%;
+}
+
+.cc-challenges-visual h3 {
+  font-size: 1.6rem;
+  color: #f39c12; /* Golden Orange for section headings */
+  margin-bottom: 20px;
+}
+
+/* Visual Section - Carbon Credit Benefits Pie Chart */
+.cc-challenges-benefits-visual {
+  flex: 1; /* Allow pie chart to take up equal space */
+  max-width: 100%;
+}
+
+.cc-challenges-benefits-visual h3 {
+  font-size: 1.6rem;
+  color: #f39c12; /* Golden Orange for section headings */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .cc-challenges-title {
+    font-size: 2.2rem; /* Smaller font size for mobile */
+  }
+
+  .cc-challenges-description {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  /* Stack charts vertically on small screens */
+  .cc-challenges-visual-container {
+    flex-direction: column;
+    gap: 20px; /* Reduce gap between the charts */
+  }
+
+  .cc-challenges-visual, .cc-challenges-benefits-visual {
+    flex: none; /* Prevent charts from stretching */
+  }
+}

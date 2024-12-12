@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header.sticky {
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f39c12;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+    color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+
+/* Auth Buttons */
+.auth-buttons .btn {
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-signup {
+    background-color: #f39c12;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.auth-buttons .btn:hover {
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4);
+}
+
+.btn-signup:hover {
+    background-color: #e67e22;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Content Section */
+.content {
+    margin: 20px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 24px;
+    margin: 40px 20px 20px;
+    color: #ff9900;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 10px;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dashboard-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-box h3 {
+    color: #ff9900;
+}
+
+.dashboard-box p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+    height: 30px;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ff9900;
+    transition: width 0.5s ease;
+}
+
+/* Recommendations Section */
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.recommendations ul li strong {
+    color: #ff9900;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffa07a;
+    color: #fff;
+}
+
+/* Graph container style */
+.graph-container {
+    margin-top: 40px;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+}

@@ -1,0 +1,47 @@
+.carbon-credits-header {
+    margin-top: 70px; /* Matches or slightly exceeds the sticky navbar height */
+    background-color: #111; /* Dark Gray to complement the navbar's style */
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    border-top: 2px solid #f39c12; /* Golden Orange for visual continuity */
+  }
+  
+  .header-content {
+    max-width: 900px; /* Adjusted for larger screens */
+    margin: 0 auto;
+    color: #fff; /* White text for high contrast */
+  }
+  
+  .header-title {
+    font-size: 2.8rem; /* Slightly smaller than the navbar logo for hierarchy */
+    font-weight: bold;
+    color: #f39c12; /* Golden Orange for emphasis */
+    margin-bottom: 15px;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+    color: #ddd; /* Light Gray to contrast with the title */
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #f39c12; /* Golden Orange for primary call-to-action */
+    color: #000; /* Black text for strong contrast */
+    border: 2px solid #f39c12; /* Matches the button color */
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 25px; /* Rounded buttons for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e67e22; /* Slightly darker orange for hover effect */
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4); /* Glow-like hover effect */
+    color: #fff; /* White text on hover */
+  }
+  

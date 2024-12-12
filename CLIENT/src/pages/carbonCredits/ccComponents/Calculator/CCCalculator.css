@@ -1,0 +1,134 @@
+/* Main container for the carbon credits calculator */
+.carbon-credits-calculator {
+    display: flex;
+    flex-direction: row; /* Arrange sliders and graph side by side */
+    gap: 40px; /* Space between the left and right sections */
+    padding: 40px;
+    background-color: #1e1e1e; /* Dark background */
+    color: #fff;
+    justify-content: space-between;
+    max-width: 100%; /* Max width of the page */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Style for the left box that contains the sliders */
+  .calculator-section {
+    background-color: #333; /* Dark gray background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Take less than half of the width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for separation */
+  }
+  
+  .calculator-section h3 {
+    font-size: 1.5rem;
+    color: #f39c12; /* Golden color for headings */
+    margin-bottom: 10px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    height: 8px;
+    background: #888; /* Light gray slider background */
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9900; /* Golden color for the thumb */
+    cursor: pointer;
+  }
+
+  .input-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-controls button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .input-controls button:hover {
+    background-color: #e67e22;
+  }
+
+  .slider-container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+  }
+  
+  .calculator-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .carbon-credits-visual {
+    width: 55%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  /* Select dropdown styling */
+  select {
+    width: 100%;
+    padding: 8px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the right section (graph container) */
+  .carbon-credits-visual {
+    flex: 1; /* Takes up remaining space */
+    max-width: 55%; /* The graph will occupy the remaining width */
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Title for the summary section */
+  .carbon-credits-summary {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .carbon-credits-calculator {
+      flex-direction: column; /* Stack sliders and graph vertically */
+      gap: 20px; /* Reduce space between sections */
+    }
+  
+    .calculator-section {
+      width: 100%; /* Take full width on mobile */
+    }
+  
+    .carbon-credits-visual {
+      width: 100%; /* Ensure the graph takes full width on mobile */
+    }
+  }
+  

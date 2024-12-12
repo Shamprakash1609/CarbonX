@@ -1,0 +1,120 @@
+.verify-otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+}
+
+.verify-otp-form-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: #111; /* Dark Gray section background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    border: 1px solid #ff9900; /* Bright Orange border */
+}
+
+.verify-otp-left {
+    flex: 1;
+    background-color: #222; /* Darker Gray background */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff; /* White text */
+}
+
+.verify-otp-left h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff9900; /* Bright Orange color for header */
+}
+
+.verify-otp-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.verify-otp-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #222; /* Darker Gray input background */
+    border: 1px solid #ff9900; /* Bright Orange border */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+.input-field::placeholder {
+    color: #ddd; /* Light Gray placeholder text */
+}
+
+.verify-btn {
+    background-color: #ff9900; /* Bright Orange button background */
+    color: #fff; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.verify-btn:disabled {
+    background-color: #f39c12; /* Golden Orange for disabled state */
+    cursor: not-allowed;
+}
+
+.verify-btn:hover:not(:disabled) {
+    background-color: #ffa07a; /* Light Orange hover effect */
+}
+
+.success-msg {
+    color: #ff9900; /* Bright Orange for success messages */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.error-msg {
+    color: #ffa07a; /* Light Orange/Pale Salmon for error messages */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.verify-otp-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333; /* Medium Dark Gray background */
+    color: #ddd; /* Light Gray text */
+}
+
+.verify-otp-right h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.verify-otp-right p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.verify-otp-right a {
+    color: #ff9900; /* Bright Orange link */
+    text-decoration: none;
+}
+
+.verify-otp-right a:hover {
+    text-decoration: underline;
+}

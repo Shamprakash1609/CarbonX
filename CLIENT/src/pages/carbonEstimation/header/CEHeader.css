@@ -1,0 +1,59 @@
+.carbon-estimation-header {
+  margin-top: 60px;
+  background-color: #111; /* Dark Gray background */
+  color: #fff; /* White text for high contrast */
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.carbon-estimation-header-content {
+  max-width: 100%; 
+  margin: 0 auto;
+  border: 2px solid #f39c12; 
+  padding: 50px;
+  border-radius: 15px; 
+  background-color: rgba(255, 255, 255, 0.05); 
+}
+
+.carbon-estimation-header-title {
+  font-size: 3rem; /* Larger and more prominent title */
+  font-weight: bold;
+  color: #f39c12; /* Golden Orange title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.carbon-estimation-header-subtitle {
+  font-size: 1.2rem;
+  color: #ddd; /* Light Gray for subtle contrast */
+  margin: 15px 0;
+  line-height: 1.6; /* Better line spacing for readability */
+}
+
+.carbon-estimation-header-call-to-action {
+  font-size: 1.1rem; /* Slightly larger call-to-action */
+  margin-top: 20px;
+  color: #e67e22; /* Slightly darker orange for emphasis */
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth hover effects */
+}
+
+.carbon-estimation-header-call-to-action:hover {
+  color: #f39c12; /* Golden Orange on hover */
+  text-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Glow-like effect */
+}
+
+@media (max-width: 768px) {
+  .carbon-estimation-header-title {
+    font-size: 2rem; /* Scale down for smaller screens */
+  }
+
+  .carbon-estimation-header-subtitle,
+  .carbon-estimation-header-call-to-action {
+    font-size: 1rem; /* Adjust text size for readability */
+  }
+
+  .carbon-estimation-header-content {
+    padding: 15px; /* Reduce padding for mobile */
+    border-radius: 10px;
+  }
+}

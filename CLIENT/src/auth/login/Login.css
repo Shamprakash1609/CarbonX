@@ -1,0 +1,124 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+}
+
+.login-form-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: #111; /* Dark Gray section background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    border: 1px solid #ff9900; /* Bright Orange border */
+}
+
+.login-left {
+    flex: 1;
+    background-color: #222; /* Darker Gray background */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff; /* White text */
+}
+
+.login-left h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333; /* Medium Dark Gray background */
+    color: #ddd; /* Light Gray text */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #222; /* Darker Gray input background */
+    border: 1px solid #ff9900; /* Bright Orange border */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+.input::placeholder {
+    color: #ddd; /* Light Gray placeholder text */
+}
+
+.green-btn {
+    background-color: #ff9900; /* Bright Orange button background */
+    color: #fff; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.green-btn:disabled {
+    background-color: #f39c12; /* Golden Orange for disabled state */
+    cursor: not-allowed;
+}
+
+.green-btn:hover:not(:disabled) {
+    background-color: #ffa07a; /* Light Orange hover effect */
+}
+
+.white-btn {
+    background-color: #fff; /* White button */
+    color: #ff9900; /* Bright Orange text */
+    padding: 10px;
+    border: 1px solid #ff9900; /* Bright Orange border */
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.white-btn:hover {
+    background-color: #ff9900; /* Bright Orange hover background */
+    color: #fff; /* White text on hover */
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #ff9900; /* Bright Orange link */
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.error-msg {
+    color: #ffa07a; /* Light Orange/Pale Salmon for error messages */
+    font-size: 14px;
+    margin-bottom: 10px;
+}

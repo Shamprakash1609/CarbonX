@@ -1,0 +1,175 @@
+/* Header Section */
+.header {
+    /* background-color: #1e1e1e; */
+    background-color: #000000;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header.sticky {
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f39c12;
+    text-transform: none;
+    font-style: normal;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+    color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a,
+.nav-menu li {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Highlight the active nav item */
+.nav-menu li.active a {
+    color: #f39c12; /* Same color as hover */
+    border-bottom: 2px solid #f39c12; /* Same border as hover */
+}
+
+/* Ensure the hover effect works on the active nav item as well */
+.nav-menu li.active a:hover {
+    color: #f39c12; /* Reinforce color */
+    border-bottom: 2px solid #f39c12;
+}
+
+
+.nav-menu li a:hover,
+.nav-menu li:hover {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px; /* Fixed width to accommodate both states */
+}
+
+.auth-buttons .btn {
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-signup {
+    background-color: #f39c12;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.auth-buttons .btn:hover {
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4);
+}
+
+.btn-signup:hover {
+    background-color: #e67e22;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: #ff9900; /* Bright Orange background as primary highlight */
+    color: #fff; /* White text to contrast with the vibrant background */
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+.btn-logout:hover {
+    background-color: #f39c12; /* Golden Orange on hover for a smooth transition */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* More prominent shadow effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+    }
+
+    .nav-menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .auth-buttons .btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

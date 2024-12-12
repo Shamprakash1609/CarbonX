@@ -1,0 +1,64 @@
+/* Container for the "What Are Carbon Credits?" Section */
+.cc-info {
+    background-color: #111; /* Dark Gray background to match the header */
+    padding: 60px 20px; /* Same padding as the header for consistency */
+    margin-top: 0; /* Remove margin to close the gap between header and this component */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+  
+  .cc-info-content {
+    max-width: 900px; /* Adjusted max-width for consistency with header content */
+    margin: 0 auto;
+    color: #fff; /* White text for high contrast */
+  }
+  
+  .cc-info-title {
+    font-size: 2.8rem; /* Matches the header title size */
+    font-weight: bold;
+    color: #f39c12; /* Golden Orange for emphasis */
+    margin-bottom: 15px;
+  }
+  
+  .cc-info-description {
+    font-size: 1.2rem;
+    color: #ddd; /* Light Gray for readability */
+    margin-bottom: 30px;
+  }
+  
+  .cc-info-highlight {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff9900; /* Bright Orange for emphasis */
+    margin-bottom: 40px;
+  }
+  
+  .cc-info-visual {
+    margin-top: 30px;
+  }
+  
+  .cc-info-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around image */
+  }
+  
+  @media (max-width: 768px) {
+    .cc-info {
+      padding: 50px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .cc-info-title {
+      font-size: 2.2rem; /* Slightly smaller title for mobile */
+    }
+  
+    .cc-info-description {
+      font-size: 1rem; /* Smaller font size for readability on mobile */
+    }
+  
+    .cc-info-highlight {
+      font-size: 1.2rem; /* Slightly smaller highlight font size */
+    }
+  }
+  
