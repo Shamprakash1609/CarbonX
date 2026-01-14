@@ -52,4 +52,6 @@ CarbonX simulates different emission reduction strategies to guide decision-maki
 
 ![Dashboard Overview](assets/dashboard_overview.png)
 
-![Coal Mine Map](assets/coal_mine_map.png)
+### GIS wasteland detection
+
+<img src="assets/coal_mine_map.png" alt="GIS wasteland detection" width="100%">
