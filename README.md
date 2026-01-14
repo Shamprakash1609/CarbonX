@@ -47,3 +47,9 @@ CarbonX simulates different emission reduction strategies to guide decision-maki
 - **Decision Support**: Empowers mine operators to make informed choices for emission reduction.
 - **Cost Savings**: Identifies opportunities to optimize operations, potentially reducing costs associated with emissions.
 - **Sustainability Goals**: Aids Indian coal mines in their journey towards carbon neutrality, supporting the country's overall climate goals.
+
+## Project Gallery
+
+![Dashboard Overview](assets/dashboard_overview.png)
+
+![Coal Mine Map](assets/coal_mine_map.png)

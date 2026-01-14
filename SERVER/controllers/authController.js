@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken');
 const mailSender = require('../helpers/email_sender');
 
 
-
 exports.register = async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
